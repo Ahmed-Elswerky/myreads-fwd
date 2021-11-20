@@ -13,12 +13,10 @@ function BookSearch(props) {
     });
   }, []);
   useEffect(() => {
-    props.str.length == 0
-      ? setBooks([])
-      : search(props.str).then((books) => {
-          if (books?.length > 0) setBooks(books);
-          else setBooks([]);
-        });
+    setBooks([]);
+    search(props.str).then((books) => {
+      setBooks(books);
+    });
   }, [props.str]);
   return (
     <>

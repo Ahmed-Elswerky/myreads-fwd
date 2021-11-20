@@ -19,7 +19,6 @@ function App() {
     getAll().then((books) => {
       setState({ books: [] });
       setState({ books });
-      console.log(books);
     });
   }, [state.update]);
 
