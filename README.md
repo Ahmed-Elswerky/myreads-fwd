@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-# Firebase hosted Link: 
+ Firebase hosted Link: 
     [https://swerky-reads.web.app/] (https://swerky-reads.web.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
