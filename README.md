@@ -1,15 +1,21 @@
-# Getting Started with Create React App
+
 
  Firebase hosted Link: 
     [https://swerky-reads.web.app/](https://swerky-reads.web.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+
+The first project in FWD Nanodegree, displaying the books, categorize with shelves and search
 
 
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn`
+
+To install the dependencies from the package.js
 
 ### `yarn start`
 

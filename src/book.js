@@ -13,7 +13,7 @@ import {get,update} from './BookAPI'
     },[])
     return(
          <li key={book?.id}>
-          <div className="book">
+          <div className="book" key={book?.id+'b'}>
             <div className="book-top">
               <div
                 className="book-cover"
@@ -23,7 +23,7 @@ import {get,update} from './BookAPI'
                   backgroundImage: `url(${book?.imageLinks?.smallThumbnail})`,
                 }}></div>
               <div className="book-shelf-changer">
-                <select value={book.shelf} onChange={v=>{v.target?.value?.length>0&&update({id:book.id},v.target.value).then(()=>props.update())}}>
+                <select value={book?.shelf||'none'} onChange={v=>{v.target?.value?.length>0&&update({id:book.id},v.target.value).then(()=>props.update())}}>
                   <option value="" >
                     Move to...
                   </option>

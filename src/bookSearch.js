@@ -15,7 +15,7 @@ function BookSearch(props) {
   useEffect(() => {
     setBooks([]);
     search(props.str).then((books) => {
-      setBooks(books);
+      books?.length>0&&setBooks(books);
     });
   }, [props.str]);
   return (
