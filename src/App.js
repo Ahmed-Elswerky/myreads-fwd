@@ -37,7 +37,7 @@ function App() {
                   {state.books
                     .filter((e) => e.shelf == "currentlyReading")
                     .map((book) => (
-                      <Book book={book} update={() => setState({ update: Date.now() })} />
+                      <Book key={book.id+'l'} book={book} update={() => setState({ update: Date.now() })} />
                     ))}
                 </ol>
               </div>
@@ -49,7 +49,7 @@ function App() {
                   {state.books
                     .filter((e) => e.shelf == "wantToRead")
                     .map((book) => (
-                      <Book book={book} update={() => setState({ update: Date.now() })} />
+                      <Book key={book.id+'l'} book={book} update={() => setState({ update: Date.now() })} />
                     ))}
                 </ol>
               </div>
@@ -61,7 +61,7 @@ function App() {
                   {state.books
                     .filter((e) => e.shelf == "read")
                     .map((book) => (
-                      <Book book={book} update={() => setState({ update: Date.now() })} />
+                      <Book key={book.id+'l'} book={book} update={() => setState({ update: Date.now() })} />
                     ))}
                 </ol>
               </div>

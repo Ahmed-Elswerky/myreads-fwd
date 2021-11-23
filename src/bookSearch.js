@@ -21,7 +21,7 @@ function BookSearch(props) {
   return (
     <>
       {books?.map((book) => (
-        <Book book={allBooks.find((e) => e.id == book.id) || book} update={() => setUpdate(Date.now())} />
+        <Book key={book.id+'bs'} book={allBooks.find((e) => e.id == book.id) || book} update={() => setUpdate(Date.now())} />
       ))}
     </>
   );
